@@ -1,37 +1,58 @@
 <link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
 
- <div class="row">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
+
+  <div class="row">
     <div class="small-4 medium-6 large-8 columns">
-      <h1 class="renew lighter-color-header"> parvathy iyer </h1>
-      <h1 class="renew"> food photos</h1>
+      <h1 class="maintitle"> parvathy iyer </h1>
+      <h1 class="secondarytitle"> recipes</h1>
+      <h1 class="secondarytitle"> types</h1>
     </div>
   </div>
 
-<div id="container">
-
-  <div class="item w2"><img alt="" src="https://inspirationfeeed.files.wordpress.com/2013/09/portrait-photography-281.jpg"></div>
-  <div class="item">tHis is about bisibelabath dbjhdjhdjksahdjsajd sadjksahdjkh jdhjhdjhdjashdhkajsdh
-  sajdhjsahdj
+  <div id="container">
+    <div class="item" ><img class="frameborder" alt="" src="food1.jpg">
+    <h1 class="secondarytitle"> spiced chocolate with sea salt </h1></div>
+    <div class="item"><img class="frameborder" alt="" src="food2.jpg">
+    <h1 class="secondarytitle"> chocolate brownie </h1>
+    </div>
+    <div class="item"> <img class="frameborder" alt="" src="food3.jpg">
+    <h1 class="secondarytitle"> cranberry bread </h1></div>
+    <div class="item"> <img class="frameborder" alt="" src="food4.jpg">
+    <h1 class="secondarytitle"> fig & arugula panini</h1></div>
+    <div class="item"> <img class="frameborder" alt="" src="food5.jpg">
+    <h1 class="secondarytitle"> kalanda saadam </h1></div>
+    <div class="item"><img class="frameborder" alt="" src="food6.jpg">
+    <h1 class="secondarytitle"> molagaipodi </h1>
+    </div>
+    <div class="item"><img class="frameborder" alt="" src="food7.jpg">
+    <h1 class="secondarytitle"> molaguttal </h1>
+    </div>
+    <div class="item"> <img class="frameborder" alt="" src="food8.jpg">
+    <h1 class="secondarytitle"> mushroom risotto </h1></div>
+    <div class="item"> <img class="frameborder" alt="" src="food9.jpg">
+    <h1 class="secondarytitle"> onion pakoda </h1></div>
   </div>
-   <div class="item"> <img alt="" src="https://inspirationfeeed.files.wordpress.com/2013/09/portrait-photography-281.jpg"></div>
-   <div class="item"><img alt="" src="http://weddingphotography.com.ph/wp-content/uploads/2011/12/portrait-photography-techniques-dramatic-high-contrast-lighting-01-12.jpg"></div>
- <div class="item"><img alt="" src="http://weddingphotography.com.ph/wp-content/uploads/2011/12/portrait-photography-techniques-dramatic-high-contrast-lighting-01-12.jpg"></div>
-   <div class="item"> <img alt="" src="https://inspirationfeeed.files.wordpress.com/2013/09/portrait-photography-281.jpg"></div>
-  <div class="item w2"><img alt="" src="http://weddingphotography.com.ph/wp-content/uploads/2011/12/portrait-photography-techniques-dramatic-high-contrast-lighting-01-12.jpg"></div>
 
-
-</div>
-
-
-</div>
 
 
 <script src="masonry.pkgd.min.js"></script>
 <script>
   var container = document.querySelector('#container');
-var msnry = new Masonry( container, {
+  var msnry = new Masonry( container, {
   // options
-  columnWidth:310,
-  itemSelector: '.item'
+  gutter:20,
+  isFitWidth: true,
+  //columnWidth:310,
+  itemSelector: '.item',
+
+
 });
+
+</script>
+<script type="text/javascript">
+    var tl = new TimelineLite();
+    tl.from('.frameborder', 2, {right:"5%", ease:Bounce.easeOut, delay:1})
 </script>

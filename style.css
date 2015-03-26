@@ -1,9 +1,39 @@
-.item { margin-bottom:1%;}
-.item.w2 { margin-bottom:1%; }
-#container
- {
-
-
-  margin-left: auto;
-  margin-right: auto;
+body{
+  background-color: #333333;
 }
+.item{
+  margin-bottom:1%;
+  border-radius:4px;
+  background-color: #a9a9a9;
+
+  }
+
+
+.item.frameborder{
+  border-radius:6px;
+}
+
+.frameborder:hover{
+  width:102%;
+  border-bottom-right-radius:6px;
+}
+
+.item:hover{
+  border-radius:8px;
+}
+
+#container
+{
+ margin:0 auto;
+}
+.maintitle{
+  font-family:'Covered By Your Grace';
+  text-align: left;
+}
+.secondarytitle{
+  font-family:'Covered By Your Grace';
+  text-align: center;
+  color:white;
+  font-size:1.2em;
+}
+
